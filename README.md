@@ -12,5 +12,10 @@ Singularity recipe for [gotop](https://github.com/cjbassi/gotop). gotop is anoth
 To download the image run the command
 
 ```
-singularity pull shub://icaoberg/singularity-gotop
+singularity pull --name gotop.simg shub://icaoberg/singularity-gotop
+```
+
+## Running the app
+```
+singularity run --app gotop gotop.simg
 ```
