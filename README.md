@@ -19,3 +19,8 @@ singularity pull --name gotop.simg shub://icaoberg/singularity-gotop
 ```
 singularity run --app gotop gotop.simg
 ```
+
+---
+[![CBD](http://www.cbd.cmu.edu/wp-content/uploads/2017/07/wordpress-default.png)](http://www.cbd.cmu.edu)
+
+Copyleft © 2018-2019 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)
