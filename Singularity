@@ -18,7 +18,7 @@ IncludeCmd: yes
 
 ####################################################################################
 %appenv gotop
-    APP=/usr/local/gotop
+    APP=/usr/local/bin/gotop
     export APP
 
 %apphelp gotop
