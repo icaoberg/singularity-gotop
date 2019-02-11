@@ -15,7 +15,31 @@ To download the image run the command
 singularity pull --name gotop.simg shub://icaoberg/singularity-gotop
 ```
 
-## Running the app
+## Help
+```
+singularity run --app gotop singularity-gotop.simg --help
+Usage: gotop [options]
+
+Options:
+  -c, --color=NAME      Set a colorscheme.
+  -h, --help            Show this screen.
+  -m, --minimal         Only show CPU, Mem and Process widgets.
+  -r, --rate=RATE       Number of times per second to update CPU and Mem widgets [default: 1].
+  -v, --version         Print version and exit.
+  -p, --percpu          Show each CPU in the CPU widget.
+  -a, --averagecpu      Show average CPU in the CPU widget.
+  -f, --fahrenheit      Show temperatures in fahrenheit.
+  -s, --statusbar       Show a statusbar with the time.
+  -b, --battery         Show battery level widget ('minimal' turns off).
+
+Colorschemes:
+  default
+  default-dark (for white background)
+  solarized
+  monokai
+```
+
+## Example
 ```
 singularity run --app gotop gotop.simg
 ```
