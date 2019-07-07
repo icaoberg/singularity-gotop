@@ -9,13 +9,6 @@ Singularity recipe for [gotop](https://github.com/cjbassi/gotop). gotop is anoth
 * Install [Singularity v2.6.+](https://sylabs.io/docs/).
 * Run the script `install.sh` included in this repository.
 
-## Download
-To download a prebuilt image run the command
-
-```
-singularity pull --name gotop.simg shub://icaoberg/singularity-gotop
-```
-
 ## Help
 ```
 singularity run --app gotop singularity-gotop.simg --help
