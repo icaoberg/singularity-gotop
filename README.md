@@ -4,8 +4,13 @@
 
 Singularity recipe for [gotop](https://github.com/cjbassi/gotop). gotop is another terminal based graphical activity monitor, inspired by [gtop](https://github.com/aksakalli/gtop) and [vtop](https://github.com/MrRio/vtop), this time written in [Go](https://golang.org/)!
 
+## Installation
+
+* Install [Singularity v2.6.+](https://sylabs.io/docs/).
+* Run the script `install.sh` included in this repository.
+
 ## Download
-To download the image run the command
+To download a prebuilt image run the command
 
 ```
 singularity pull --name gotop.simg shub://icaoberg/singularity-gotop
