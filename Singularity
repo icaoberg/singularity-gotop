@@ -5,8 +5,8 @@ IncludeCmd: yes
 
 %labels
     AUTHOR icaoberg
-    EMAIL icaoberg@cmu.edu
-    WEBSITE http://www.cbd.cmu.edu/icaoberg
+    EMAIL icaoberg@alumni.cmu.edu
+    WEBSITE http://www.andrew.cmu.edu/~icaoberg
 
 %runscript
     exec /bin/bash "$@"
