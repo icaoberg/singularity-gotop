@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: debian:8.0
+From: ubuntu:16.04
 
 IncludeCmd: yes
 
