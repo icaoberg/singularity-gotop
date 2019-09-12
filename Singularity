@@ -20,6 +20,13 @@ IncludeCmd: yes
     mv gotop /usr/local/bin
     rm -rf /tmp/gotop
 
+    if [ ! -d /images ]; then mkdir /images; fi
+    if [ ! -d /projects ]; then mkdir /projects; fi
+    if [ ! -d /containers ]; then mkdir /containers; fi
+    if [ ! -d /share ]; then mkdir /share; fi
+    if [ ! -d /scratch ]; then mkdir /scratch; fi
+    if [ ! -d /webservers/pfenningweb ]; then mkdir -p /webservers/pfenningweb; fi
+    
 ####################################################################################
 %appenv gotop
     APP=/usr/local/bin/gotop
