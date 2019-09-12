@@ -1,19 +1,14 @@
 # gotop
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/2229)
 
-<div align="center">
-
-<img src="https://github.com/cjbassi/gotop/blob/master/assets/logo.png?raw=true" width="20%" />
-<br>
-</div>
+![Logo](/images/logo.png)
 
 Singularity recipe for [gotop](https://github.com/cjbassi/gotop). gotop is another terminal based graphical activity monitor, inspired by [gtop](https://github.com/aksakalli/gtop) and [vtop](https://github.com/MrRio/vtop), this time written in [Go](https://golang.org/)!
 
-## Download
-To download the image run the command
+## Installation
 
-```
-singularity pull --name gotop.simg shub://icaoberg/singularity-gotop
-```
+* Install [Singularity v2.6.+](https://sylabs.io/docs/).
+* Run the script `install.sh` included in this repository.
 
 ## Help
 ```
@@ -44,7 +39,13 @@ Colorschemes:
 singularity run --app gotop gotop.simg
 ```
 
+## Disclaimer
+
+[![Wold you buy me some coffee?](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/icaoberg)
+
+I am nothing but a humble programmer creating the container for this wonderful app. 
+
 ---
 [![CBD](http://www.cbd.cmu.edu/wp-content/uploads/2017/07/wordpress-default.png)](http://www.cbd.cmu.edu)
 
-Copyleft © 2018-2019 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)
+Copyleft © 2019 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)
