@@ -1,12 +1,12 @@
 Bootstrap: docker
-From: ubuntu:16.04
+From: debian:latest
 
 IncludeCmd: yes
 
 %labels
     AUTHOR icaoberg
-    EMAIL icaoberg@cmu.edu
-    WEBSITE http://www.cbd.cmu.edu/icaoberg
+    EMAIL icaoberg@alumni.cmu.edu
+    WEBSITE http://linus.cbd.cs.cmu.edu
 
 %runscript
     exec /bin/bash "$@"
