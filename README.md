@@ -1,6 +1,10 @@
 # gotop
 [![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/2229)
 [![Build Status](https://travis-ci.org/icaoberg/singularity-gotop.svg?branch=master)](https://travis-ci.org/icaoberg/singularity-gotop)
+[![GitHub issues](https://img.shields.io/github/issues/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/issues)
+[![GitHub forks](https://img.shields.io/github/forks/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/network)
+[![GitHub stars](https://img.shields.io/github/stars/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
 
 ![Logo](/images/logo.png)
 
