@@ -1,15 +1,12 @@
 Bootstrap: docker
-From: ubuntu:16.04
+From: debian:latest
 
 IncludeCmd: yes
 
 %labels
     AUTHOR icaoberg
     EMAIL icaoberg@alumni.cmu.edu
-    WEBSITE http://linus.cbd.cs.cmu.edu
-
-%runscript
-    exec /bin/bash "$@"
+    WEBSITE http://icaoberg.github.io
 
 %post
     /usr/bin/apt-get update && apt-get install -y --no-install-recommends apt-utils
@@ -21,10 +18,6 @@ IncludeCmd: yes
     rm -rf /tmp/gotop
     
 ####################################################################################
-%appenv gotop
-    APP=/usr/local/bin/gotop
-    export APP
-
 %apphelp gotop
     For more information about goto visit https://github.com/cjbassi/gotop
 
