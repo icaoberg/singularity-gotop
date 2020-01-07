@@ -2,17 +2,9 @@
 
 sudo sed -i -e 's/^Defaults\tsecure_path.*$//' /etc/sudoers
 
-# Check Python
-
-echo "Python Version:"
-python --version
 pip install --user sregistry[all]
-sregistry version
-
-echo "sregistry Version:"
 
 # Install Singularity
-
 SINGULARITY_BASE="${GOPATH}/src/github.com/sylabs/singularity"
 export PATH="${GOPATH}/bin:${PATH}"
 
