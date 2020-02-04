@@ -1,5 +1,6 @@
 # gotop
-[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/2229)
+[![Hosted](https://img.shields.io/badge/hosted-sylabs.io-green.svg)](https://cloud.sylabs.io/library/icaoberg/default/gotop)
+![Release](https://img.shields.io/badge/release-v3.30.0-green.svg)
 [![Build Status](https://travis-ci.org/icaoberg/singularity-gotop.svg?branch=master)](https://travis-ci.org/icaoberg/singularity-gotop)
 [![GitHub issues](https://img.shields.io/github/issues/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/issues)
 [![GitHub forks](https://img.shields.io/github/forks/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/network)
