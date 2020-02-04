@@ -1,12 +1,13 @@
 Bootstrap: docker
-From: debian:latest
+From: debian:buster
 
 IncludeCmd: yes
 
 %labels
     AUTHOR icaoberg
-    EMAIL icaoberg@alumni.cmu.edu
-    WEBSITE http://icaoberg.github.io
+    EMAIL icaoberg@andrew.cmu.edu
+    WEBSITE http://www.andrew.cmu.edu/~icaoberg
+    VERSION 3.3.0
 
 %post
     /usr/bin/apt-get update && apt-get install -y --no-install-recommends apt-utils
