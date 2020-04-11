@@ -5,22 +5,26 @@ IncludeCmd: yes
 
 %labels
     AUTHOR icaoberg
-    EMAIL icaoberg@andrew.cmu.edu
+    EMAIL icaoberg@alumni.cmu.edu
     WEBSITE http://www.andrew.cmu.edu/~icaoberg
     VERSION 3.3.0
 
 %post
-    /usr/bin/apt-get update && apt-get install -y --no-install-recommends apt-utils
-    /usr/bin/apt-get update --fix-missing
-    /usr/bin/apt-get install -y curl git
+    apt-get update && apt-get install -y --no-install-recommends apt-utils
+    apt-get update --fix-missing
+    apt-get install -y curl git
+    
+####################################################################################
+%appinstall gotop
     git clone --depth 1 https://github.com/cjbassi/gotop /tmp/gotop
     /tmp/gotop/scripts/download.sh
     mv gotop /usr/local/bin
     rm -rf /tmp/gotop
-    
-####################################################################################
+    apt-get remove -y curl git
+    apt-get -y autoremove
+
 %apphelp gotop
-    For more information about goto visit https://github.com/cjbassi/gotop
+    gotop --help
 
 %apprun gotop
     gotop "$@"
