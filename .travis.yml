@@ -48,4 +48,3 @@ install:
 
 script:
   - bash ./build.sh
-  - du -h singularity-gotop.simg
