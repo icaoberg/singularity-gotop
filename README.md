@@ -1,9 +1,9 @@
-![Status](https://github.com/pscedu/singularity-gotop/actions/workflows/main.yml/badge.svg)
-![Status](https://github.com/pscedu/singularity-gotop/actions/workflows/pretty.yml/badge.svg)
-![Issue](https://img.shields.io/github/issues/pscedu/singularity-gotop)
-![forks](https://img.shields.io/github/forks/pscedu/singularity-gotop)
-![Stars](https://img.shields.io/github/stars/pscedu/singularity-gotop)
-![License](https://img.shields.io/github/license/pscedu/singularity-gotop)
+![Status](https://github.com/icaoberg/singularity-gotop/actions/workflows/main.yml/badge.svg)
+![Status](https://github.com/icaoberg/singularity-gotop/actions/workflows/pretty.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/icaoberg/singularity-gotop)
+![forks](https://img.shields.io/github/forks/icaoberg/singularity-gotop)
+![Stars](https://img.shields.io/github/stars/icaoberg/singularity-gotop)
+![License](https://img.shields.io/github/license/icaoberg/singularity-gotop)
 
 ## Building the image using the recipe
 
