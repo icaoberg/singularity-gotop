@@ -1,0 +1,25 @@
+#%Module1.0
+#INSTALLATION instructions can be found here https://gitlab.psc.edu/pscedu/singularity-gotop
+
+## "URL: https://www.psc.edu/resources/software"
+## "Category: Other"
+
+ proc ModulesHelp { } {
+ global dotversion
+ puts stderr "gotop 3.0.0"
+ puts stderr "-----------"
+ puts stderr "\nTo enable, first load the following required modules (via module load command): "
+ puts stderr "\n\tmodule load gotop/3.0.0"
+ puts stderr "\nFor a full list of binaries included in this module, type"
+ puts stderr "\n\tmodule what-is gotop/3.0.0"
+ }
+
+module-whatis "gotop 3.0.0
+
+  Tools included in this module are
+
+  * gotop"
+
+set GOTOP_HOME /bil/packages/gotop/3.0.0
+setenv GOTOP_HOME ${GOTOP_HOME}
+prepend-path PATH ${GOTOP_HOME}
