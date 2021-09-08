@@ -1,57 +1,34 @@
-# gotop
-[![Hosted](https://img.shields.io/badge/hosted-sylabs.io-green.svg)](https://cloud.sylabs.io/library/icaoberg/default/gotop)
-![Release](https://img.shields.io/badge/release-v3.30.0-green.svg)
-[![Build Status](https://travis-ci.org/icaoberg/singularity-gotop.svg?branch=master)](https://travis-ci.org/icaoberg/singularity-gotop)
-[![GitHub issues](https://img.shields.io/github/issues/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/issues)
-[![GitHub forks](https://img.shields.io/github/forks/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/network)
-[![GitHub stars](https://img.shields.io/github/stars/icaoberg/singularity-gotop.svg)](https://github.com/icaoberg/singularity-gotop/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://www.gnu.org/licenses/quick-guide-gplv3.en.html)
+![Status](https://github.com/pscedu/singularity-gotop/actions/workflows/main.yml/badge.svg)
+![Status](https://github.com/pscedu/singularity-gotop/actions/workflows/pretty.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/pscedu/singularity-gotop)
+![forks](https://img.shields.io/github/forks/pscedu/singularity-gotop)
+![Stars](https://img.shields.io/github/stars/pscedu/singularity-gotop)
+![License](https://img.shields.io/github/license/pscedu/singularity-gotop)
 
-![Logo](/images/logo.png)
+## Building the image using the recipe
 
-Singularity recipe for [gotop](https://github.com/cjbassi/gotop). gotop is another terminal based graphical activity monitor, inspired by [gtop](https://github.com/aksakalli/gtop) and [vtop](https://github.com/MrRio/vtop), this time written in [Go](https://golang.org/)!
+### To build the image locally
+Run the script `build.sh` to build image locally.
 
-## Installation
-
-* Install [Singularity v2.6.+](https://sylabs.io/docs/).
-* Run the script `install.sh` included in this repository.
-
-## Help
 ```
-singularity run --app gotop singularity-gotop.simg --help
-Usage: gotop [options]
-
-Options:
-  -c, --color=NAME      Set a colorscheme.
-  -h, --help            Show this screen.
-  -m, --minimal         Only show CPU, Mem and Process widgets.
-  -r, --rate=RATE       Number of times per second to update CPU and Mem widgets [default: 1].
-  -v, --version         Print version and exit.
-  -p, --percpu          Show each CPU in the CPU widget.
-  -a, --averagecpu      Show average CPU in the CPU widget.
-  -f, --fahrenheit      Show temperatures in fahrenheit.
-  -s, --statusbar       Show a statusbar with the time.
-  -b, --battery         Show battery level widget ('minimal' turns off).
-
-Colorschemes:
-  default
-  default-dark (for white background)
-  solarized
-  monokai
+bash ./build.sh
 ```
 
-## Example
+### To build the image remotely
+Run the script `rbuild.sh` to build image remotely.
+
 ```
-singularity run --app gotop gotop.simg
+bash ./rbuild.sh
 ```
+## To run tests
+To run the available tests, run the command
 
-## Disclaimer
-
-[![Wold you buy me some coffee?](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/icaoberg)
-
-I am nothing but a humble programmer creating the container for this wonderful app. 
+```
+bash ./test.sh
+```
 
 ---
-[![CBD](http://www.cbd.cmu.edu/wp-content/uploads/2017/07/wordpress-default.png)](http://www.cbd.cmu.edu)
+Copyright © 2020-2021 Pittsburgh Supercomputing Center. All Rights Reserved.
 
-Copyleft © 2019 [icaoberg](http://www.andrew.cmu.edu/~icaoberg) at the [Computational Biology Department](http://www.cbd.cmu.edu) in [Carnegie Mellon University](http://www.cmu.edu)
+The [Biomedical Applications Group](https://www.psc.edu/biomedical-applications/) at the [Pittsburgh Supercomputing
+Center](http://www.psc.edu) in the [Mellon College of Science](https://www.cmu.edu/mcs/) at [Carnegie Mellon University](http://www.cmu.edu).
