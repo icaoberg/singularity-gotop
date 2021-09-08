@@ -1,0 +1,17 @@
+#!/bin/bash
+
+VERSION=3.0.0
+PACKAGE=gotop
+TOOL=gotop
+DIRECTORY=$(dirname $0)
+
+OPTIONS=""
+for STORAGE in "${STORAGES[@]}"
+do
+	if [ -d "$STORAGE" ]; then
+		OPTIONS=$OPTIONS" -B $STORAGE"
+	fi
+done
+
+singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
+
